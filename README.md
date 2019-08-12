@@ -18,13 +18,13 @@ Python 2.7 and 3.4+
 If the python package is hosted on Github, you can install directly from Github
 
 ```sh
-pip install git+https://github.com/Yogarine/bungie-d1-sdk-python.git
+pip install git+https://github.com/Yogarine/bungie_d1_sdk_python.git
 ```
-(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/Yogarine/bungie-d1-sdk-python.git`)
+(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/Yogarine/bungie_d1_sdk_python.git`)
 
 Then import the package:
 ```python
-import bungie-d1-sdk-python 
+import bungie_d1_sdk_python 
 ```
 
 ### Setuptools
@@ -38,7 +38,7 @@ python setup.py install --user
 
 Then import the package:
 ```python
-import bungie-d1-sdk-python
+import bungie_d1_sdk_python
 ```
 
 ## Getting Started
@@ -48,22 +48,22 @@ Please follow the [installation procedure](#installation--usage) and then run th
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-inline_object1 = bungie-d1-sdk-python.InlineObject1() # inline_object_1 |  (optional)
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+inline_object1 = bungie_d1_sdk_python.InlineObject1() # inline_object_1 |  (optional)
 
 try:
     api_response = api_instance.equip_item(inline_object1=inline_object1)

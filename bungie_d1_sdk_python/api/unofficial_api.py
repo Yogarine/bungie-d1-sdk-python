@@ -18,7 +18,7 @@ import re  # noqa: F401
 # python 2 and python 3 compatibility library
 import six
 
-from bungie-d1-sdk-python.api_client import ApiClient
+from bungie_d1_sdk_python.api_client import ApiClient
 
 
 class UnofficialApi(object):

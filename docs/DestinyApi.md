@@ -1,4 +1,4 @@
-# bungie-d1-sdk-python.DestinyApi
+# bungie_d1_sdk_python.DestinyApi
 
 All URIs are relative to *https://bungie.net/d1/Platform*
 
@@ -79,19 +79,19 @@ Equips an item from a character's inventory. The endpoint will fail if the chara
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-inline_object1 = bungie-d1-sdk-python.InlineObject1() # inline_object_1 |  (optional)
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+inline_object1 = bungie_d1_sdk_python.InlineObject1() # inline_object_1 |  (optional)
 
 try:
     api_response = api_instance.equip_item(inline_object1=inline_object1)
@@ -105,17 +105,17 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-inline_object1 = bungie-d1-sdk-python.InlineObject1() # inline_object_1 |  (optional)
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+inline_object1 = bungie_d1_sdk_python.InlineObject1() # inline_object_1 |  (optional)
 
 try:
     api_response = api_instance.equip_item(inline_object1=inline_object1)
@@ -158,19 +158,19 @@ Equips multiple items from a character's inventory and returns the updated inven
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-inline_object2 = bungie-d1-sdk-python.InlineObject2() # inline_object_2 |  (optional)
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+inline_object2 = bungie_d1_sdk_python.InlineObject2() # inline_object_2 |  (optional)
 
 try:
     api_response = api_instance.equip_items(inline_object2=inline_object2)
@@ -184,17 +184,17 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-inline_object2 = bungie-d1-sdk-python.InlineObject2() # inline_object_2 |  (optional)
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+inline_object2 = bungie_d1_sdk_python.InlineObject2() # inline_object_2 |  (optional)
 
 try:
     api_response = api_instance.equip_items(inline_object2=inline_object2)
@@ -237,19 +237,19 @@ Returns Destiny account information for the supplied membership.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 destiny_membership_id = 56 # int | Destiny membership ID.
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
 
@@ -294,19 +294,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 destiny_membership_id = 56 # int | Destiny membership ID.
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
 
@@ -351,18 +351,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
 param1 = 'param1_example' # str | 
 
 try:
@@ -406,22 +406,22 @@ Returns recent activity history for a given character.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 destiny_membership_id = 56 # int | Destiny membership ID.
 character_id = 'character_id_example' # str | 
-mode = bungie-d1-sdk-python.ActivityModeType() # ActivityModeType | Game mode to return. Required. (optional)
+mode = bungie_d1_sdk_python.ActivityModeType() # ActivityModeType | Game mode to return. Required. (optional)
 count = 56 # int | The number of results to return. (optional)
 page = 56 # int | The current page to return. Starts at 1. (optional)
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
@@ -471,19 +471,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 destiny_membership_id = 56 # int | Destiny membership ID.
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
 
@@ -530,19 +530,19 @@ Returns advisor information about a given character.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 destiny_membership_id = 56 # int | Destiny membership ID.
 character_id = 'character_id_example' # str | 
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
@@ -589,19 +589,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 destiny_membership_id = 56 # int | Destiny membership ID.
 character_id = 'character_id_example' # str | 
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
@@ -650,19 +650,19 @@ Returns advisor information about a given character.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 character_id = 'character_id_example' # str | 
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
 
@@ -709,19 +709,19 @@ Returns all items for a given account.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 destiny_membership_id = 56 # int | Destiny membership ID.
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
 
@@ -766,19 +766,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 character_id = 'character_id_example' # str | 
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
 
@@ -823,19 +823,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
 
 try:
@@ -880,19 +880,19 @@ Returns Destiny character information with a given characterId. This endpoint is
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 destiny_membership_id = 56 # int | Destiny membership ID.
 character_id = 'character_id_example' # str | 
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
@@ -941,19 +941,19 @@ Returns activity progress for a given character.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 destiny_membership_id = 56 # int | Destiny membership ID.
 character_id = 'character_id_example' # str | 
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
@@ -1002,19 +1002,19 @@ Returns the inventory of a Destiny character.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 destiny_membership_id = 56 # int | Destiny membership ID.
 character_id = 'character_id_example' # str | 
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
@@ -1061,19 +1061,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 destiny_membership_id = 56 # int | Destiny membership ID.
 character_id = 'character_id_example' # str | 
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
@@ -1122,19 +1122,19 @@ Returns progression information for a given Destiny character.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 destiny_membership_id = 56 # int | Destiny membership ID.
 character_id = 'character_id_example' # str | 
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
@@ -1183,19 +1183,19 @@ Returns Destiny character information for the given characterId.<br/>To get a mo
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 destiny_membership_id = 56 # int | Destiny membership ID.
 character_id = 'character_id_example' # str | 
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
@@ -1242,20 +1242,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
 clan_id = 56 # int | A valid clan ID.
-modes = [bungie-d1-sdk-python.ActivityModeType()] # list[ActivityModeType] | Game modes to return. Comma separated. (optional)
+modes = [bungie_d1_sdk_python.ActivityModeType()] # list[ActivityModeType] | Game modes to return. Comma separated. (optional)
 statid = 'statid_example' # str |  (optional)
 maxtop = 'maxtop_example' # str |  (optional)
 
@@ -1303,19 +1303,19 @@ Gets all activities the character has participated in together with aggregate st
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 destiny_membership_id = 56 # int | Destiny membership ID.
 character_id = 'character_id_example' # str | 
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
@@ -1364,23 +1364,23 @@ Advanced InventoryItem search.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
 count = 56 # int | The number of results to return. Default is 10. (optional)
 name = 'name_example' # str | Filter by name. (optional)
-order = bungie-d1-sdk-python.ExplorerOrderBy() # ExplorerOrderBy | Order results. (optional)
-rarity = bungie-d1-sdk-python.TierType() # TierType | Filter by item rarity. (optional)
-damage_types = [bungie-d1-sdk-python.DamageType()] # list[DamageType] | Filter by damage type. (optional)
+order = bungie_d1_sdk_python.ExplorerOrderBy() # ExplorerOrderBy | Order results. (optional)
+rarity = bungie_d1_sdk_python.TierType() # TierType | Filter by item rarity. (optional)
+damage_types = [bungie_d1_sdk_python.DamageType()] # list[DamageType] | Filter by damage type. (optional)
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
 rarity2 = 'rarity_example' # str |  (optional)
 step = 'step_example' # str |  (optional)
@@ -1453,22 +1453,22 @@ Advanced search for TalentNodes.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
 page = 56 # int | The current page to return. Starts at 1. (optional)
 count = 56 # int | The number of results per page. Default is 10. (optional)
 name = 'name_example' # str | Filter by name. (optional)
-damage_types = [bungie-d1-sdk-python.DamageType()] # list[DamageType] | Filter by damage type. (optional)
+damage_types = [bungie_d1_sdk_python.DamageType()] # list[DamageType] | Filter by damage type. (optional)
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
 impact_effects = 'impact_effects_example' # str |  (optional)
 guardian_attributes = 'guardian_attributes_example' # str |  (optional)
@@ -1526,18 +1526,18 @@ Returns a list of \"tiles\" used on the Bungie.net website.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
 
 try:
     api_response = api_instance.get_destiny_live_tile_content_items()
@@ -1577,18 +1577,18 @@ Returns the current version of the Destiny 1 mobile manifest as a json object.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
 
 try:
     api_response = api_instance.get_destiny_manifest()
@@ -1628,19 +1628,19 @@ Returns a single definition from the manifest as json object.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-definition_type = bungie-d1-sdk-python.DefinitionType() # DefinitionType | 
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+definition_type = bungie_d1_sdk_python.DefinitionType() # DefinitionType | 
 definition_id = 56 # int | 
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
 version = 'version_example' # str |  (optional)
@@ -1689,19 +1689,19 @@ Returns Destiny excellence badges for a given account. No longer in use.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 destiny_membership_id = 56 # int | Destiny membership ID.
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
 
@@ -1748,19 +1748,19 @@ Returns the Grimoire for a given account.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 destiny_membership_id = 56 # int | Destiny membership ID.
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
 flavour = 'flavour_example' # str | Indicates flavour stats should be included with player card data. More testing needed. (optional)
@@ -1811,18 +1811,18 @@ Returns Grimoire definitions. This is the equivalent pulling the [[GrimoireDefin
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
 
 try:
     api_response = api_instance.get_grimoire_definition()
@@ -1862,24 +1862,24 @@ Returns historical stat information about a given Destiny character.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 destiny_membership_id = 56 # int | Destiny membership ID.
 character_id = 'character_id_example' # str | 
-period_type = bungie-d1-sdk-python.PeriodType() # PeriodType | Indicates a specific period type to return. (optional)
-modes = [bungie-d1-sdk-python.ActivityModeType()] # list[ActivityModeType] | Game modes to return. Comma separated. (optional)
-groups = [bungie-d1-sdk-python.StatsGroupType()] # list[StatsGroupType] | Group of stats to include, otherwise only general stats are returned. Comma separated. (optional)
+period_type = bungie_d1_sdk_python.PeriodType() # PeriodType | Indicates a specific period type to return. (optional)
+modes = [bungie_d1_sdk_python.ActivityModeType()] # list[ActivityModeType] | Game modes to return. Comma separated. (optional)
+groups = [bungie_d1_sdk_python.StatsGroupType()] # list[StatsGroupType] | Group of stats to include, otherwise only general stats are returned. Comma separated. (optional)
 monthstart = 'monthstart_example' # str | First month to return when monthly stats are requested. Use the format YYYY-MM. (optional)
 monthend = 'monthend_example' # str | Last month to return when monthly stats are requested. Use the format YYYY-MM. (optional)
 daystart = 'daystart_example' # str | First day to return when daily stats are requested. Use the format YYYY-MM-DD. (optional)
@@ -1933,18 +1933,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
 
 try:
     api_response = api_instance.get_historical_stats_definition()
@@ -1984,19 +1984,19 @@ Gets aggregate historical stats organized around each character for a given acco
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 destiny_membership_id = 56 # int | Destiny membership ID.
 groups = 'groups_example' # str |  (optional)
 
@@ -2041,19 +2041,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 destiny_membership_id = 56 # int | Destiny membership ID.
 character_id = 'character_id_example' # str | 
 item_instance_id = 'item_instance_id_example' # str | 
@@ -2102,18 +2102,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
 param1 = 'param1_example' # str | 
 param2 = 'param2_example' # str | 
 param3 = 'param3_example' # str | 
@@ -2165,21 +2165,21 @@ Returns leaderboard stats compared against friends. Note you may need to re-auth
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 destiny_membership_id = 56 # int | Destiny membership ID.
-modes = [bungie-d1-sdk-python.ActivityModeType()] # list[ActivityModeType] | Game modes to return. Comma separated. (optional)
+modes = [bungie_d1_sdk_python.ActivityModeType()] # list[ActivityModeType] | Game modes to return. Comma separated. (optional)
 statid = 'statid_example' # str |  (optional)
 maxtop = 'maxtop_example' # str |  (optional)
 
@@ -2226,18 +2226,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
 param1 = 'param1_example' # str | 
 param2 = 'param2_example' # str | 
 param3 = 'param3_example' # str | 
@@ -2291,19 +2291,19 @@ Returns leaderboard stats compared against PSN friends. Note, you may need re-au
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-modes = [bungie-d1-sdk-python.ActivityModeType()] # list[ActivityModeType] | Game modes to return. Comma separated. (optional)
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+modes = [bungie_d1_sdk_python.ActivityModeType()] # list[ActivityModeType] | Game modes to return. Comma separated. (optional)
 code = 'code_example' # str |  (optional)
 
 try:
@@ -2348,19 +2348,19 @@ Returns the numerical id of a player based on their display name, zero if not fo
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 display_name = 'display_name_example' # str | A valid PSN Id or Gamertag display name.
 ignorecase = True # bool | Default is false when not specified. True to cause a caseless search to be used. (optional)
 
@@ -2407,19 +2407,19 @@ Returns the Grimoire for the currently signed in account.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
 flavour = 'flavour_example' # str | Indicates flavour stats should be included with player card data. More testing needed. (optional)
 single = 56 # int | Return data for a single cardId. (optional)
@@ -2468,18 +2468,18 @@ Gets the available post game carnage report for the activity ID.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
 activity_instance_id = 56 # int | A valid activityInstanceId.
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
 
@@ -2525,18 +2525,18 @@ Returns information about current daily, weekly and special events.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
 
 try:
@@ -2578,18 +2578,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
 
 try:
@@ -2633,18 +2633,18 @@ Returns Public information for a given Vendor.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
 vendor_hash = 56 # int | A valid vendorHash.
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
 
@@ -2690,18 +2690,18 @@ Returns Public information for a given Vendor, with metadata.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
 vendor_hash = 56 # int | A valid vendorHash.
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
 
@@ -2747,18 +2747,18 @@ Returns advisor information about the vendor Xur in Destiny.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
 
 try:
@@ -2800,19 +2800,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 record_book_hash = 56 # int | 
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
 
@@ -2859,18 +2859,18 @@ Returns a list of currently active events.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
 
 try:
@@ -2914,19 +2914,19 @@ Returns a list of triumph sets for a given account.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 destiny_membership_id = 56 # int | Destiny membership ID.
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
 
@@ -2973,19 +2973,19 @@ Gets details about unique weapon usage, including all exotic weapons.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 destiny_membership_id = 56 # int | Destiny membership ID.
 character_id = 'character_id_example' # str | 
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
@@ -3034,19 +3034,19 @@ Returns the contents of player's Vault.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
 account_id = 56 # int | Destiny membership ID. (optional)
 
@@ -3062,17 +3062,17 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
 account_id = 56 # int | Destiny membership ID. (optional)
 
@@ -3117,19 +3117,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
 account_id = 56 # int | Destiny membership ID. (optional)
 
@@ -3145,17 +3145,17 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
 account_id = 56 # int | Destiny membership ID. (optional)
 
@@ -3202,19 +3202,19 @@ Returns information about a Vendor for a given Destiny character.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 character_id = 'character_id_example' # str | 
 vendor_hash = 56 # int | A valid vendorHash.
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
@@ -3263,19 +3263,19 @@ Returns information about a Vendor for a given Destiny character with metadata.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 character_id = 'character_id_example' # str | 
 vendor_hash = 56 # int | A valid vendorHash.
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
@@ -3322,19 +3322,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 character_id = 'character_id_example' # str | 
 vendor_hash = 56 # int | A valid vendorHash.
 vendor_item_id = 56 # int | A valid vendorItemIndex see [[GetVendorForCurrentCharacter]].
@@ -3385,19 +3385,19 @@ Returns an item from a Vendor's inventory for a given character with metadata.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 character_id = 'character_id_example' # str | 
 vendor_hash = 56 # int | A valid vendorHash.
 vendor_item_id = 56 # int | A valid vendorItemIndex see [[GetVendorForCurrentCharacter]].
@@ -3448,19 +3448,19 @@ Returns a summary of Vendors for a given Destiny character.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 character_id = 'character_id_example' # str | 
 definitions = True # bool | Include definitions in the response. Use while testing. (optional)
 
@@ -3507,19 +3507,19 @@ Returns a list of players by username and platform.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-membership_type = bungie-d1-sdk-python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+membership_type = bungie_d1_sdk_python.BungieMembershipType() # BungieMembershipType | The type of account for which info will be extracted.
 display_name = 'display_name_example' # str | A valid display name to search for.
 
 try:
@@ -3564,19 +3564,19 @@ Changes the lock state on an equipable item.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-inline_object3 = bungie-d1-sdk-python.InlineObject3() # inline_object_3 |  (optional)
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+inline_object3 = bungie_d1_sdk_python.InlineObject3() # inline_object_3 |  (optional)
 
 try:
     api_response = api_instance.set_item_lock_state(inline_object3=inline_object3)
@@ -3590,17 +3590,17 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-inline_object3 = bungie-d1-sdk-python.InlineObject3() # inline_object_3 |  (optional)
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+inline_object3 = bungie_d1_sdk_python.InlineObject3() # inline_object_3 |  (optional)
 
 try:
     api_response = api_instance.set_item_lock_state(inline_object3=inline_object3)
@@ -3643,19 +3643,19 @@ Set the track state of a given quest.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-inline_object4 = bungie-d1-sdk-python.InlineObject4() # inline_object_4 |  (optional)
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+inline_object4 = bungie_d1_sdk_python.InlineObject4() # inline_object_4 |  (optional)
 
 try:
     api_response = api_instance.set_quest_tracked_state(inline_object4=inline_object4)
@@ -3669,17 +3669,17 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-inline_object4 = bungie-d1-sdk-python.InlineObject4() # inline_object_4 |  (optional)
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+inline_object4 = bungie_d1_sdk_python.InlineObject4() # inline_object_4 |  (optional)
 
 try:
     api_response = api_instance.set_quest_tracked_state(inline_object4=inline_object4)
@@ -3722,19 +3722,19 @@ Moves items to and from a character and the vault.
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-inline_object = bungie-d1-sdk-python.InlineObject() # inline_object |  (optional)
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+inline_object = bungie_d1_sdk_python.InlineObject() # inline_object |  (optional)
 
 try:
     api_response = api_instance.transfer_item(inline_object=inline_object)
@@ -3748,17 +3748,17 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-d1-sdk-python
-from bungie-d1-sdk-python.rest import ApiException
+import bungie_d1_sdk_python
+from bungie_d1_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-d1-sdk-python.Configuration()
+configuration = bungie_d1_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-d1-sdk-python.DestinyApi(bungie-d1-sdk-python.ApiClient(configuration))
-inline_object = bungie-d1-sdk-python.InlineObject() # inline_object |  (optional)
+api_instance = bungie_d1_sdk_python.DestinyApi(bungie_d1_sdk_python.ApiClient(configuration))
+inline_object = bungie_d1_sdk_python.InlineObject() # inline_object |  (optional)
 
 try:
     api_response = api_instance.transfer_item(inline_object=inline_object)
